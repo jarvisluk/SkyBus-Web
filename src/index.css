@@ -1,3 +1,47 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  /* Style: MTR Flat Design */
+  :root {
+    /* MTR 核心特征：深蓝色基调与高对比色 */
+    --color-primary: #0072bc;       /* 港铁蓝 (MTR Blue) */
+    --color-primary-hover: #005a96;
+    --color-bg: #ffffff;           /* 保持纯白底色，强调清洁感 */
+    --color-surface: #f4f4f4;      /* 浅灰色块，模拟站台肌理 */
+    --color-text: #000000;         /* 绝对黑，确保可读性 */
+    --color-text-secondary: #555555;
+    
+    /* 线路强调色 (MTR Line Colors) */
+    --color-accent: #e21f11;       /* 荃湾线红 */
+    --color-success: #007d3a;      /* 观塘线绿 */
+    --color-warning: #ff9d00;      /* 东铁线黄 */
+    
+    /* 扁平化导视风格 */
+    --color-border: #000000;       /* 边框通常用纯黑或不使用 */
+    --border-radius: 0px;          /* MTR 风格偏向方正，极致扁平 */
+    --border-width: 3px;           /* 模拟导视牌的厚重感 */
+    
+    /* 阴影：完全移除，贯彻 Flat Design */
+    --shadow-x: 0px;
+    --shadow-y: 0px;
+    --shadow-blur: 0px;
+    --shadow-spread: 0px;
+    --shadow-color: transparent;
+
+    /* 字体：MTR 标志性的 Myriad Pro 或 Inter */
+    --font-family: 'Inter', 'Segoe UI', sans-serif;
+    --font-weight: 500;            /* 稍微加粗，模拟印刷感 */
+    --font-weight-bold: 900;       /* 极粗，用于站名感标题 */
+
+    /* 辅助属性 */
+    --backdrop-blur: 0px;
+    --bg-opacity: 1;
+    --mtr-stripe-height: 8px;      /* 特有的顶部色彩条带高度 */
+  }
+
+  body {
+    @apply bg-bg text-text font-sans;
+  }
+}
