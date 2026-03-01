@@ -175,7 +175,7 @@ function MobileNavButton({ icon: Icon, label, active, onClick, badge, isHome }) 
 
 function HomeView({ setActiveTab }) {
   return (
-    <div className="min-h-full space-y-6 md:space-y-8 animate-in fade-in slide-in-from-bottom-4 duration-500">
+    <div className="min-h-full space-y-6 md:space-y-8 animate-in fade-in slide-in-from-bottom-4 duration-500 px-6 md:px-0">
       
       {/* 沉浸式顶部区域 (MTR 风格) */}
       <div className="-mx-6 px-6 -mt-6 pt-10 pb-16 md:mx-0 md:px-0 md:mt-0 md:pt-0 md:pb-8 bg-[#003B6F] md:bg-transparent text-white md:text-[#003B6F] relative overflow-hidden md:overflow-visible">
